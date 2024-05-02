@@ -1,0 +1,154 @@
+
+.mers_footer{
+    width: 100%;
+    background-color: var(--colr_footer);
+    color: white;
+}
+.bl_FooterSoc{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+.bl_FooterMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.navList{
+    padding: 3px;
+    box-sizing: border-box;
+    transition: all 1s;
+    height: 200px;
+}.navList svg{
+    display: none;
+    width: 10px;
+    cursor: pointer;
+}
+.navList p{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+.asideContent ul li{
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 27px;
+    box-sizing: border-box;
+}
+.asideContent ul li:hover{
+  font-weight: bold;
+}
+.bl_FooterInfo{
+    width: 100%;
+    background-color: #d6d6d6;
+}.bl_FooterInfo p{
+    margin: auto;
+    width: 95%;
+    font-size: 14px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+.footerDown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #242323;
+    font-size: 14px;
+}
+.blockLogoFooter{
+    display: flex;
+    width: 230px;
+    align-items: center;
+    justify-content: space-around;
+}.blockLogoFooter img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* Адаптив */
+@media (max-width: 750px) { 
+.svg_effect a {
+    height: 27px;
+}
+.socLink_svg {
+    width: 18px;
+    height: 18px;
+}
+}
+
+@media (max-width: 700px) { 
+.bl_FooterMenu > div:nth-child(2), .bl_FooterMenu > div:nth-child(3), .bl_FooterMenu > div:nth-child(4)  {
+    border-top: 1px solid rgb(108, 108, 108);
+}
+.bl_FooterSoc {
+    padding: 10px;
+    justify-content: center;
+}
+.bl_FooterMenu > div:first-child > div{
+    border-top: none;
+}
+.bl_FooterMenu {
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+}
+.navList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+}.navList svg{
+    display: block;
+    fill: white;
+}
+.navList p {
+    font-size: 16px;
+    padding: 5px;
+}
+.asideContent{
+    width: 100%;
+    height: 0px;
+    transition: all 1s;
+    background-color: white;
+    overflow: hidden;
+}.asideContent ul li{
+    color: black;
+}.asideContent ul li:hover{
+    font-weight: bold;
+    border-bottom:1px solid rgb(191, 191, 191);
+}
+.asideContent ul li{
+    font-size: 15px;
+    padding: 5px;
+}
+}
+
+@media (max-width: 650px) { 
+.footerDown {
+    flex-direction: column;
+}
+.blockLogoFooter {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 255px;
+}
+}
+
+@media (max-width: 500px) { 
+.bl_FooterInfo p {
+    width: 90%;
+    font-size: 15px;
+    padding: 15px;
+}
+}

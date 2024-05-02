@@ -1,0 +1,103 @@
+[
+
+    {
+        "id": 1,
+        "sku": 10111,
+        "name": "Mersedes B-class",
+        "type": "Хетчбек",
+        "properts":"3.7л / Бензин / 215 к.с / Автомат / Передній",
+        "price": "56 000 $",
+        "mass_photo": [
+        "DB/auto/auto1/auto11.avif",
+        "DB/auto/auto1/auto12.avif",
+        "DB/auto/auto6/auto62.avif",
+        "DB/auto/auto1/auto14.avif"
+        ],
+        "speed_start": "4 сек.",
+        "speed_max": "390 км/г",
+        "capacity": "3.8 л."
+
+    },
+    {
+        "id": 2,
+        "sku": 10222,
+        "name": "Mersedes V-class",
+        "type": "Минивен",
+        "properts":"Запас: 500км / Електро / 215 к.с",
+        "price": "75 000 $",
+        "mass_photo": [
+        "DB/auto/auto2/auto21.avif",
+        "DB/auto/auto2/auto22.avif",
+        "DB/auto/auto6/auto62.avif",
+        "DB/auto/auto2/auto24.avif"    
+    ],
+    "speed_start": "5 сек.",
+    "speed_max": "370 км/г",
+    "capacity": "5.1 л."
+    },
+    {
+        "id": 3,
+        "sku": 10333,
+        "name": "Mersedes S-class",
+        "type": "Седан",
+        "properts":"3.4л / Гибрид / 215 к.с / Автомат / Передній",
+        "price": "40 000 $",
+        "mass_photo": [
+        "DB/auto/auto3/auto31.avif",
+        "DB/auto/auto3/auto32.webp",
+        "DB/auto/auto5/auto53.avif",
+        "DB/auto/auto3/auto34.avif"
+    ],
+    "speed_start": "3 сек.",
+    "speed_max": "430 км/г",
+    "capacity": "4.8 л."
+    },
+
+
+    {
+        "id": 4,
+        "sku": 10444,
+        "name": "Mersedes G-class",
+        "type": "Позашляховик",
+        "properts":"Запас:380км / Електро / 375 к.с",
+        "price": "69 000 $",
+        "mass_photo": [
+        "DB/auto/auto4/g4.avif",
+        "DB/auto/auto4/g1.avif",
+        "DB/auto/auto4/g2.avif",
+        "DB/auto/auto4/g3.avif"
+    ]
+    },
+    {
+        "id": 5,
+        "sku": 10555,
+        "name": "Mersedes E-class",
+        "type": "Купе",
+        "properts":"3.5л / Бензин / 215 к.с / Автомат / Передній",
+        "price": "39 500 $",
+        "mass_photo": [
+        "DB/auto/auto5/auto51.avif",
+        "DB/auto/auto5/auto52.avif",
+        "DB/auto/auto5/auto53.avif",
+        "DB/auto/auto5/benz2.avif"
+    ]
+    },
+    {
+        "id": 6,
+        "sku": 10666,
+        "name": "Mersedes Maybach",
+        "type": "Седан",
+        "properts":"5л / Бензин / 215 к.с / Автомат / Передній",
+        "price": "86 500 $",
+        "mass_photo": [
+        "DB/auto/auto6/auto61.avif",
+        "DB/auto/auto6/auto62.avif",
+        "DB/auto/auto6/auto63.avif",
+        "DB/auto/auto6/auto64.jpg"
+    ]
+    }
+  ]
+
+
+
+  

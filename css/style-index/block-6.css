@@ -1,0 +1,94 @@
+.Block_6{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.bl-path_h2_mod{
+    margin: auto;
+}
+.bl-path_h2_mod h2{
+    color: black;
+}
+.wrapp_models_categ{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+.models_path{
+    width: 47%;
+    max-height: 600px;
+    margin: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    overflow: hidden;
+}.models_path:hover .models_path__about{
+    background: rgba(1, 1, 1, 1);
+}
+.models_path img {
+    width: 100%;
+    max-width: 102%;
+    object-fit: cover;
+    vertical-align: top;
+}.models_path:hover img {
+    width: 102%;
+    transition: all 1s;
+}
+.models_path__about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgba(1, 1, 1, 0.8);
+    transition: all 1s;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}.models_path__about a{
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 2px;
+    padding: 3px;
+    box-sizing: border-box;
+    transition: all 1s;
+}.models_path__about a:hover{
+    border: 1px solid white;
+}
+
+/* Адаптация */
+@media (max-width: 850px) { 
+.models_path__about {
+    padding: 10px;
+    font-size: 16px;
+}.models_path__about a {
+    font-size: 13px;
+}
+}
+@media (max-width: 750px) { 
+.models_path {
+    margin: 5px;
+}
+}
+@media (max-width: 650px) { 
+.models_path__about a {
+    font-size: 12px;
+}
+}
+@media (max-width: 550px) { 
+.models_path__about {
+    padding: 8px;
+    font-size: 13px;
+}
+}
+@media (max-width: 450px) { 
+.Block_6 {
+    padding: 3px;
+}
+}
+

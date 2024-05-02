@@ -1,0 +1,336 @@
+.Block_5{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+}
+.bl5_about{
+    width: 100%;
+    color: white;
+}
+.bl5_about p:first-child{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bl5_about p:last-child{
+    font-size: 17px;
+}
+.wrapp__form{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #252525;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 75px;
+}
+.container_form{
+    width: 450px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 1s;
+    opacity: 0;
+}.container_form > p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+._active .container_form{
+    opacity: 1;
+}
+.form{
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.inp_form{
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.inp_form::placeholder{
+    color: #636363;
+    font-weight: bold;
+}
+.inp_form:focus{
+    background-color: #202020;
+    outline: 1px solid gray;
+}
+.form .btn_form {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.go_animation{
+    position: relative;
+    top: 150px;
+    left: -50px;
+    width: 750px;
+    height: 450px;
+    border-radius: 3px;
+    background-image: url('../../media/map3.avif');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#svg1 {
+    position: relative;
+    top: 54px;
+    left: 86px;
+    width: 472px;
+    height: 408px;
+}
+#svg1 path{
+    stroke-dasharray:843px;
+    stroke-dashoffset:843px;
+    transition: all 12s;
+}
+._active #svg1 path{
+    stroke-dashoffset:1;
+}
+
+
+
+
+/* Адаптация */
+@media (max-width: 1250px) { 
+#svg1 {
+    top: 32px;
+    left: 79px;
+    width: 430px;
+}
+.wrapp__form {
+    max-width: 1100px;
+}
+}
+
+@media (max-width: 1150px) { 
+#svg1 {
+    top: 35%;
+    left: 12%;
+    width: 404px;
+    height: auto;
+}
+.wrapp__form {
+    max-width: none;
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+}
+.go_animation {
+    position: static;
+    width: 620px;
+}
+.container_form {
+    width: 390px;
+}
+.Block_5{
+    height: auto;
+}
+}
+
+@media (max-width: 1050px) { 
+.go_animation {
+    width: 515px;
+}
+#svg1 {
+    top: 128px;
+    width: 335px;
+}
+.wrapp__form{
+    height: 420px;
+    padding: 10px;
+    justify-content: space-around;
+}
+.container_form {
+    width: 375px;
+    height: 425px;
+    margin: 5px;
+}
+}
+
+@media (max-width: 950px) {
+.Block_5 {
+    margin-top: 50px;
+}
+.bl5_about {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 85%;
+}
+.bl5_about p:first-child{
+    font-size: 25px;
+}
+.bl5_about p:last-child{
+    font-size: 19px;
+}
+.wrapp__form {
+    flex-direction: column;
+    height: 775px;
+    background: none;
+}
+.go_animation {
+    width: 750px;
+    margin: 50px auto 0 auto;
+}
+.container_form {
+    width: 750px;
+    height: 230px;
+    margin: auto;
+    background: none;
+}
+#svg1 {
+    top: 187px;
+    width: 490px;
+}
+}  
+
+@media (max-width: 800px) { 
+.go_animation, .container_form {
+    width: 650px;
+}
+#svg1 {
+    top: 165px;
+    width: 420px;
+}
+.container_form {
+    height: 275px;
+}
+
+
+}
+
+@media (max-width: 700px) { 
+.wrapp__form {
+    height: 615px;
+}
+.container_form {
+    height: 220px;
+}
+.go_animation, .container_form {
+    width: 500px;
+}
+.go_animation{
+    height: 310px;
+    margin: 15px auto 0 auto;
+}
+#svg1 {
+    top: 127px;
+    width: 325px;
+}
+.bl5_about p:first-child {
+    font-size: 21px;
+}.bl5_about p:last-child {
+    font-size: 15px;
+}
+}
+
+
+@media (max-width: 550px) { 
+.go_animation {
+    width: 460px;
+    margin: 15px auto 0 auto;
+}
+.container_form {
+    width: 95%;
+}
+#svg1 {
+    top: 115px;
+    width: 298px;
+}
+.wrapp__form {
+    height: 515px;
+    padding: 10px 12px 10px 10px;
+}
+.inp_form {
+    width: 100%;
+    height: 32px;
+    margin-top: 7px;
+}
+.form .btn_form {
+    height: 50px;
+}
+.bl5_about {
+    left: 0%;
+    padding: 5px;
+    width: 100%;
+}
+}
+
+@media (max-width: 500px) { 
+.Block_5 {
+    margin-top: 20px;
+}
+.go_animation {
+    width: 350px;
+    margin: 25px auto 0 auto;
+}
+#svg1 {
+    top: 88px;
+    width: 228px;
+}
+.wrapp__form {
+    height: 460px;
+    margin-top: 50px;
+}
+.bl5_about p:first-child {
+    font-size: 16px;
+}
+.bl5_about p:last-child {
+    font-size: 13px;
+}
+.container_form > p {
+    font-size: 15px;
+    margin: 0;
+}
+.inp_form {
+    width: 100%;
+    height: 26px;
+    margin-top: 5px;
+}
+.container_form {
+    max-width: 360px;
+}
+.form .btn_form {
+    height: 40px;
+    font-size: 13px;
+}
+.bl5_about {
+    left: 4%;
+    width: 90%;
+}
+}
+
+@media (max-width: 450px) { 
+.bl5_about {
+    left: 0%;
+    width: 100%;
+}
+.go_animation {
+    width: 345px;
+}
+.container_form {
+    width: 100%;
+}
+}
+
+
+

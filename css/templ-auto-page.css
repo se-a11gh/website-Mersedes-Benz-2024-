@@ -1,0 +1,398 @@
+@import url('header.css');
+@import url('footer.css');
+
+
+.mers-templ_main{
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: #1e1e1e;
+    color: white;
+}
+.texProd_foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 450px;
+    margin: 20px auto 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.texProd_foto__big {
+    width: 59%;
+    max-height: 450px;
+}
+.texProd_foto__big img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+.line_slide_small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10%;
+    margin-left: 10px;
+    background-color: rgb(40, 40, 40);
+    padding: 7px;
+    box-sizing: border-box;
+} 
+.slide_small_1 {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+}.slide_small_1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.texProd_about {
+    width: 40%;
+    margin-left: 20px;
+}
+.texProd_about > p:first-child{
+    text-align: right;
+}
+.texProd_about > p:nth-child(2){
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+}
+.texProd_about ul:nth-child(3){
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.bl_about_price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+}
+
+.bl_about_price p{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+.btn_group_about_price{
+    margin-top: 25px;
+}
+.btn_about_price{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}.btn_about_price a{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* Адаптив */
+@media (max-width: 950px) {
+.texProd_foto {
+    height: 375px;
+} 
+.texProd_about {
+    width: 43%;
+}
+.btn_about_price a {
+    padding: 6px;
+}
+.texProd_about > p:nth-child(2) {
+    font-size: 23px;
+}
+.texProd_about > p:first-child, .texProd_about ul, .bl_about_price p {
+    font-size: 15px;
+}
+}
+
+@media (max-width: 850px) { 
+.texProd_foto {
+    height: auto;
+    flex-direction: column;
+}
+.texProd_foto__big {
+    width: 95%;
+}
+.line_slide_small {
+    flex-direction: row;
+    width: 95.5%;
+    margin-left: -1px;
+}
+.slide_small_1 {
+    margin: 5px 5px 0 5px;
+}   
+.texProd_about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 25px 0 0 0;
+}
+.texProd_about > p:first-child {
+    width: 100%;
+    text-align: left;
+}
+.texProd_about ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.texProd_about ul li{
+    margin-left: 5px;
+}
+.texProd_about ul li:after{
+    content: " / ";
+}
+.texProd_about > p:nth-child(2), .texProd_about ul:nth-child(3) {
+    padding: 0;
+}
+.btn_group_about_price{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn_about_price {
+    width: 48%;
+}
+.btn_group_about_price div:last-child{
+    margin-left: 10px;
+}
+}
+
+@media (max-width: 500px) { 
+.btn_about_price {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.btn_group_about_price div:last-child {
+    margin-left: 0;
+}
+.line_slide_small {
+    width: 100%;
+}
+}
+
+@media (max-width: 470px) { 
+.texProd_about {
+    width: 100%;
+}
+}
+
+
+
+/* Блок-2 */
+.Block2_templ {
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto 20px auto;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+.name_props_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 50px;
+    z-index: 3;
+    background-color: #1e1e1e;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+.name_props_group p{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    box-sizing: border-box;
+}
+.actv_p{
+    background-color: var(--colr_blue);
+}
+
+
+.block_prop__1{
+    position: relative;
+    top: 0;
+    transition: all 1s;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    color: white;
+    font-size: 17px;
+}
+.block_prop__1 .prop_js2{
+    border:1px solid var(--colr_blue);
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prop_js2 svg{
+    display: none;
+    width: 9px;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.block_prop__1__content{
+    height: auto;
+    padding: 5px 7px 15px 7px;
+    box-sizing: border-box;
+}
+.block_prop__1__content p {
+    margin: 10px auto 10px auto;
+}
+
+
+/* Описание авто*/
+.list_propts li::before {
+    display: inline-block;
+    content: " ";
+    margin: 0 5px 0 5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--colr_blue);
+}
+.list_propts li{
+    line-height: 24px;
+}
+
+
+/*Характеристики и Модификации*/
+.tbl_box {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-collapse: collapse;
+}
+.tbl_box tr:nth-child(even) {
+    background-color: rgb(194, 194, 194);
+}
+td {
+    height: 50px;
+    font-weight: normal;
+    margin-left: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.tbl_box tbody th {
+    width: 22%;
+    font-weight: bold;
+    padding: 0 15px 0 5px;
+    text-align: left;
+}
+.tbl2  tbody th {
+    width: 40%;
+}
+.video_review iframe{
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+
+
+
+/* Адаптация */
+@media (max-width: 700px) { 
+.block_prop__1 .prop_js2 {
+    padding: 8px;
+    font-size: 18px;
+}
+.block_prop__1__content p, .list_propts {
+    font-size: 16px;
+}
+.list_propts li::before {
+    width: 8px;
+    height: 8px;
+}
+h2{
+    font-size: 21px;
+}
+}
+
+@media (max-width: 600px) { 
+.block_prop__1 .prop_js2 {
+    text-align: center;
+    padding: 5px 8px;
+    font-size: 17px;
+}
+.name_props_group, .block_prop__1__content{
+    display: none;
+}
+.actv_content, .prop_js2 svg{
+    display: block;
+}
+.prop_js2 > p{
+    cursor: pointer;
+}
+}
+
+@media (max-width: 550px) {     
+td {
+    font-size: 14px;
+    padding: 4px;
+}
+.tbl_box tbody th {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 500px) { 
+.block_prop__1__content p, .list_propts {
+    font-size: 15px;
+}
+.list_propts li::before {
+    width: 6px;
+    height: 6px;
+}
+h2{
+    font-size: 18px;
+}
+.Block2_templ {
+    padding: 0 5px 0 5px;
+}
+}
+
+@media (max-width: 470px) { 
+td {
+    font-size: 12px;
+    padding: 3px 10px 3px 3px;
+}
+.tbl_box tbody th {
+    font-size: 13px;
+}
+}
+
+
+
+
+.wrapp_mini_menu {
+    top: 15%;
+}
+.siteAvto_info{
+    width: 95%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: rgb(236, 236, 236);
+    margin: 10px auto 20px auto;
+    color: black;
+}
+.breadcrums {
+    width: 100%;
+}
+.breadcrums_left p a{
+   color: white;
+   font-weight: bold;
+}
+.wrapp_breadcrums {
+    margin-top: 0px;
+    padding: 3px;
+}

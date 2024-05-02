@@ -1,0 +1,316 @@
+@import url('../header.css');
+@import url('../footer.css');
+
+@import url('block-6.css');
+@import url('block-5.css');
+@import url('block-4-3.css');
+@import url('block-2.css');
+
+
+/* Главный блок */
+.mers_main{
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: #1e1e1e;
+}
+.Block_1{
+    display: flex;
+    width: 99.7%;
+    height: 625px;
+}
+.Slider_wrap{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 565px;
+}
+.Bl1__slider{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.mySlide{
+    position: absolute;
+    width: 100%;
+    height: 605px;
+    transition: all 1s;
+}.mySlide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Bl1__slide_dots{
+    display: flex;
+    position: absolute;
+    left: 6.5%;
+    top: 2%;
+    transform: translate(-50%, -2%);
+    width: 85px;
+    height: 31px;
+    padding: 0px 4px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: black;
+    z-index: 5;
+}
+.dot, .active{
+    width: 17px;
+    height: 17px;
+    margin: 7px auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}.active{
+background-color: var(--colr_blue);
+transition: all 1s;
+}
+.Bl1__slider_about__wrap{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 605px;
+    z-index: 2;
+    overflow: hidden;
+}
+.panel_more_hide{
+    position: absolute;
+    background: rgba(1, 1, 1, 0);
+    width: 100px;
+    height: 100%;
+}
+.panel_more_hide div{
+    width: 100%;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 1;
+}
+.panel_more_hide ~ .hide_panel{
+    opacity: 0;
+}
+
+
+.panel_more_hide div span{
+    position: absolute;
+}
+.strelaBack{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    width: 50px;
+    transform: rotate(-180deg);
+}
+.panel_more_hide ~ div {
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 53px;
+}
+.btn_groups{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.btn_groups div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 90px;
+    border-radius: 3px;
+    opacity: 0.5;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: #202020;
+}
+.btn_groups div:hover{
+    opacity: 0.8;
+}
+.btn_groups div svg{
+    width: 18px;
+    height: 30px;
+}
+
+.Bl1__slider_about {
+    position: relative;
+    left: 0%;
+    width: 500px;
+    height: 605px;
+    transition: all 0.7s;
+    color: white;
+    background: rgba(1, 1, 1, 0.8);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+}
+.Info_slideProp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+    background: rgba(143, 136, 170, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Info_slideProp p, .Info_slideName{
+    font-weight: bold;
+}
+.Info_slideName{
+    font-size: 24px;
+    text-align: center;
+}
+.Info_slidePrice{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
+}
+.Info_slidePrice span{
+    font-size: 20px;
+    font-weight: normal;
+}
+.btn_sl_about{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 10px 0;
+}.btn_sl_about a{
+    padding: 10px;
+}
+.fltr_cl{
+    opacity: 0;
+}
+.fltr_op{
+    opacity: 1;
+}
+.arrow_hide{
+    transform: rotate(0deg);
+}
+.info_car_panel{
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+/* Адаптация */
+@media (max-width: 950px) {
+.btn_groups div {
+    width: 35px;
+    height: 70px;
+}
+.panel_more_hide div{
+    font-size: 15px;
+}
+.strelaBack {
+    width: 45px;
+}
+.Info_slideName, .Info_slidePrice {
+    font-size: 21px;
+}
+.Info_slideProp, .Info_slidePrice span {
+    font-size: 18px;
+}
+
+.btn_sl_about a {
+    padding: 5px;
+}
+.btn_sl_about {
+    height: 40px;
+}
+
+.panel_more_hide ~ div {
+    margin-top: 60px;
+}
+}
+
+@media (max-width: 750px) {
+.info_left, .panel_more_hide {
+    display: none;
+}
+.Bl1__slider_about__wrap {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Bl1__slider_about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+}
+.panel_more_hide ~ div {
+    margin-top: 10px;
+}
+.btn_groups, .mySlide {
+    height: 480px;
+}
+.btn_group_about{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.Info_slideName {
+    width: 50%;
+    text-align: left;
+}
+.Info_slidePrice {
+    width: 180px;
+}
+.Info_slideName, .Info_slidePrice {
+    font-size: 20px;
+}
+.btn_sl_about {
+    margin: 0;
+    width: 48%;
+}
+.Bl1__slide_dots {
+    left: 50%;
+}
+}
+
+@media (max-width: 450px) {
+.Block_1 {
+    height: 85vh;
+}
+.Bl1__slider_about__wrap {
+    height: 85vh;
+}
+.btn_groups, .mySlide {
+    height: 70vh;
+}
+.panel_more_hide ~ div {
+    padding: 0 8px;
+}
+.Info_slideName, .Info_slidePrice {
+    font-size: 17px;
+}
+.Info_slidePrice span {
+    font-size: 16px;
+}
+.dot, .active {
+    width: 14px;
+    height: 14px;
+    margin: 5px auto 10px auto;
+}
+.Bl1__slide_dots {
+    width: 70px;
+    height: 24px;
+}
+.Info_slidePrice {
+    width: 150px;
+}
+.Info_slideName {
+    width: 50%;
+}
+}
+
+
+
+
